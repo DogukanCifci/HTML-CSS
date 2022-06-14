@@ -1,0 +1,12 @@
+
+p {
+    background-color: antiquewhite;
+    font-size: 15px;
+    color: black;
+    margin: 10px;
+    border: 3px solid;
+    border-color: rgba(42, 195, 34, 0.34);
+    border-radius: 7px;
+    padding: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+}

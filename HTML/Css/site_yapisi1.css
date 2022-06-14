@@ -1,0 +1,82 @@
+
+*{
+    border-radius: 15px;
+}
+
+#container {
+    background-color: aqua;
+    width: 980px ;
+    height: 640px ;
+    padding-top: 10px;
+    
+}
+
+.baslik {
+    width: 960px;
+    height: 100px;
+    background-color: rgb(212, 38, 38);
+    margin: 0px 10px 0px;
+    
+}
+
+nav {
+    width: 160px;
+    height: 400px;
+    background-color: rgb(212, 38, 38);
+    margin: 10px;
+    float: left;
+}
+
+section {
+    width: 600px;
+    height: 400px;
+    background-color: rgb(212, 38, 38) ;
+    margin: 10px;
+    float: left;
+
+}
+
+
+aside {
+    width: 160px;
+    height: 400px;
+    background-color: rgb(212, 38, 38);
+    margin: 10px;
+    float: left;
+}
+
+#site_footer {
+    width: 960px;
+    height: 100px;
+    background: rgb(212, 38, 38);
+    margin: 10px;
+   float: left; 
+}
+
+#makale_header {
+    width: 580px;
+    height: 80px;
+    background-color: rgb(2, 43, 43);
+    margin: 10px;
+}
+
+article {
+    width: 580px;
+    height: 200px;
+    background-color: black;
+    margin: 0px auto ;
+}
+
+#section_footer {
+    width: 580px;
+    height: 80px;
+    margin: 10px;
+    background-color: rgb(2, 43, 43) ;
+}
+
+header p {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding-top: 15px;
+}

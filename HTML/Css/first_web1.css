@@ -1,0 +1,79 @@
+* {
+    color: white ;
+}
+img {
+    width : 300px ;
+    display: block;
+    margin: auto;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 30px 20px 10px rgb(202, 184, 116);
+
+} 
+
+body {
+    background-color: cornflowerblue;
+}
+div{
+    background-color: antiquewhite;
+}
+
+.header{
+    border: 2px solid;
+    border-color: aqua;
+    margin: auto;
+    border-radius: 30px;
+    background-color: rgb(212, 140, 140);
+    width: 80%;
+}
+
+#isim {
+    color: white;
+    text-align: center;
+
+}
+.container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid;
+    border-color: rgb(232, 150, 50);
+    background-color: rgb(68, 156, 215);
+    box-shadow: 30px 20px 10px cornsilk;
+}
+
+div.container p {
+    color: rgb(253, 244, 244);
+}
+
+div.container b {
+    color: rgb(152, 255, 7);
+}
+
+.ödüller {
+    text-align: center;
+    color: aqua;
+    text-decoration: underline;
+}
+
+.info1{
+    padding: 0px 40px;
+}
+
+.linkler  { 
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.linkler a {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.linkler a:hover {          /*Üstüne geldigimde degismesi icin */
+    background-color: rgb(114, 169, 66);
+    font-size: 20px;
+}

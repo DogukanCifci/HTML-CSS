@@ -1,0 +1,36 @@
+
+
+
+/*Yorum yapmak icin Bu isaret kullanir.   */
+* {                                         /* Universal secim genelde en üste yazilir daha sonra asagida degistirmek istediklerimi degistiririm */
+    background-color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*Disardan yazi tipi import etme */
+    font-size: 20px ;
+}
+
+#external {
+    background-color: blue;
+}
+
+p {
+    font-family: 'Dancing Script', cursive;
+    color: aquamarine ;
+    background-color: brown;
+    border: 5px solid;
+    border-radius: 5px;
+    border-color: rgb(7, 7, 7);
+    padding-left: 100px;
+    margin: 10%;
+}
+
+#yazi5{
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+div {
+    background-color: rgb(202, 211, 211);
+    border: 3px solid;
+    border-color: blue;
+    border-radius: 10px;
+    margin: 20%;
+}

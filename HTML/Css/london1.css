@@ -1,0 +1,54 @@
+div#container {
+    width: 98%;
+    height: 1000px;
+    background-color: rgb(250, 255, 253);
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+}
+
+
+nav ul  {
+    list-style-type: none;
+    
+}
+
+nav ul li {
+    padding: 5px;
+    float: right;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+
+}
+
+img {
+    width: 200px;
+    height:200px;
+    margin: 5px;
+   float: left;
+    border-radius: 10px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+div#frame {
+    
+    float: left;
+    margin: 5px 10px 5px 10px;
+    
+    border-radius: 10px;
+}
+#liste {
+    border: 1px solid blue;
+}
+#resimler {
+    border: 1px solid rgb(138, 76, 76);
+}
+
