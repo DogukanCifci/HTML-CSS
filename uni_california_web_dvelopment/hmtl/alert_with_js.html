@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Alert Test</title>
+    <script>
+        function alertTest() 
+        {
+            alert("The test is working. No Problem")
+        }
+
+        function myAlertMath() 
+        {
+            var user_number = document.getElementById("userNumber").value ;
+            alert(user_number + " so your number x 5 is "+ user_number * 5)
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Testing Time</h1>
+    <button onclick="alertTest() ;">Click Her to check</button>
+    <input type="number" id="userNumber">
+    <button onclick="myAlertMath() ; ">Click Here to multiply 5 times</button>
+    <p></p>
+</body>
+</html>

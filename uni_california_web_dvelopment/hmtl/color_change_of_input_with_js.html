@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST JAVASCRIPT</title>
+    <script type="text/javascript">
+
+        function addParagraphText(){
+            document.getElementById("for_button").innerHTML = "THANKS FOR YOUR TEXTADDING" ; 
+        }
+
+        function addNewText()
+        {
+            var testInput = document.getElementById("name").value ;         //Burada input'un idsini aliyoruz.
+            if (testInput.length == 0)          //Hier checken wir, ob der Nutzer etwas eingegeben hat
+
+            {   //Cikti p de olacagi icin burda p nin idsini aldik
+                document.getElementById("deneme").innerHTML = "Hey!!! You didnt type something!!" ; //Wenn der Nutzer nichts schreiben würde, würden wird diesen Text sehen.
+            }
+            else //Cikti p de olacagi icin burda p nin idsini aldik
+            document.getElementById("deneme").innerHTML = testInput  ;      //Wenn der Nutzer etwas eingeben würde, würden wir sehen was der Nutzer geschriebe hätte mit der Farbe Blue
+        }
+    </script>
+</head>
+<body>
+    <h1>LET'S SEE A BUTTON</h1>
+    <button onclick="addParagraphText();">Clik Here Please</button>
+
+    <p id="for_button"></p>
+
+    <input type="text" id="name">
+    <button onclick="addNewText();">Click here</button> 
+    <p id="deneme" style = "color:blue ; "></p>         <!--Burda ciktinin nasil gözükecegi ile alakali stili atadik.Ciktinin gözükmesi icin bos p actik.-->
+    
+    
+</body>
+</html>
