@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begrüßung</title>
+
+    <script>
+        function myPrompt() 
+        {       //prompt bize üstte yazi girmemiz icin alan acacak 
+            var person = prompt("Please enter your name", "Dogukan") ; //The second string optional. Yukarda isim girme yeri gelince Dogukan default oalrak yaziyor olacak.
+            //istemezsak yazmayabiliriz.
+            if (person != "")
+            {
+                //Burda id olarak p nin idsine cerdik. Yani cikti bizim id sine verdigimiz p icinde cikti olarak gelsin diye!!!!
+                document.getElementById("test").innerHTML = "Hello Mr. " + person + " How are you today?"     //this is not an alert. This will be saw on webpage
+            }
+            else 
+            alert("You did something wrong. Sorry!!")
+        }
+            
+    </script>
+</head>
+<body>
+    <p>Begrüßung mit JS</p>
+    <button onclick="myPrompt() ; ">Click Here</button>
+    <p id="test"></p>
+</body>
+</html>
