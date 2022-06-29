@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FROMS</title>
+    <title>FORMS</title>
 </head>
 <body>
 
 <form action="">
+    Country code HTML5 :   <input type="text" name="countrycode" pattern="[A-Za-z]{3}" title="Three letter country code" required><br><br>
     <p>FIRST NAME</p>
     <input type="text" name="firstvalue" required >     <!--required yazarsam kesinlikle doldurmak zorunda-->
     <p>LAST NAME</p>                                    <!-- Doldurmadigim takdirde sumbite bastigimda doldurmami söyler-->
-    <input type="text" name="lastname">
+    <input type="text" name="lastname" required>
     <p>PASSWORT</p>
     <input type="password" name="password1"><br><br>
 

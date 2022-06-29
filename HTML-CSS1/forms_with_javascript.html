@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms with JavaScript</title>
+    <script>
+        function checkField3() 
+        {
+            var dosya = document.getElementById('field1').value ;
+            var kontrol = /^ [A-Za-z]{3} $/ ;
+
+            if (kontrol.test(dosya))  
+            
+                document.getElementById("message3").innerHTML = 'Input accepted' ;
+            
+            else 
+                document.getElementById("message3").innerHTML = 'Please use a three letter code' ;
+        }
+    </script>
+</head>
+<body>
+    <!--1. input kisminda onblur ile function ekleyip öyle devam edecegiz.-->
+    <!--2. js ile islem yapacagimiz icin bir id vermeliyiz.-->
+    <!--3. olarak da bir span eklemeliyiz ki js'den mesaji oraya yazdirabilelim. Ve span icin de bir id ver-->
+    Field1 : <input type="text" id="field1" onblur="checkField1() ; ">  <span id="message1"></span><br><br>
+    Field2 : <input type="text" id="field2" onblur="checkField2() ; ">  <span id="message2"></span><br><br>
+    Country code JS : <input type="text" id="field3" onblur="checkField3() ; "> <span id="message3"></span><br><br>
+
+    Country code HTML5 :   <input type="text" name="countrycode" pattern="[A-Za-z]{3}" title="Three letter country code" required><br><br>
+    <input type="text" name="kontrol" required>
+    <input type="submit">
+</body>
+</html>
