@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form Example</title>
+    <script type="text/javascript" src="./java/complex_from_example.js"></script>
+</head>
+<body>
+    <form action="#">
+        <div id="fullpage">
+            <h1>Make an Order</h1>
+            <table border="0">
+                <tr>
+                    <td class="label_col">First Name: </td>
+                    <td class="input_col"><input onblur="firstNameCheck() ; " type="text" name="firstName" id="firstName"> </td>
+                    <td class="feedback_col"><span id="firstNamePrompt"></span> </td>
+                </tr>
+
+                <tr>
+                    <td class="label_col">Last Name: </td>
+                    <td class="input_col"><input onblur="lastNameCheck() ; " type="text" id="lastName" name="lastName"></td>
+                    <td class="feedback_col"><span id="lastNameProMpt">&nbsp</span></td>
+                </tr>
+
+                <tr>
+                    <td class="label_col">Phone Number: </td>
+                    <td class="input_col"><input onblur="phoneNumberCheck() ; " type="text" name="phone" id="phone" placeholder="xxx-xxx-xxxx"></td>
+                    <td class="feedback_col"><span id="phonePrompt">xxx-xxx-xxxx</span></td>
+                </tr>
+
+                <tr>
+                    <td class="label_col">Order Quantity: </td>
+                    <td class="input_col"><input type="number" name="quantity" id="quantity" min="0" max="55"></td>
+                    <td class="feedback_col"><span id="quantityPrompt">1-55</span></td>
+                </tr>
+
+                <tr>
+                    <td class="label_col">Item Price: </td>
+                    <td class="input_col"><input type="text" name="price" id="price" value="10" readonly></td> <!--readonly yaparak fiyati sabit tuttuk-->
+                    <td class="feedback_col"><span id="pricePrompt">USD</span></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Order Now" onclick="orderCalc() ; " ></td>
+                </tr>
+            </table>
+            <h2 class="outputBaslik"></h2>
+            <p class="outputPrice"></p>
+            <p class="outputQuantity"></p>
+            <p class="output"></p>
+        </div>
+    </form>
+</body>
+</html>
