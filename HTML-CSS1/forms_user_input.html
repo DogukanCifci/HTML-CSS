@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROMS</title>
+</head>
+<body>
+
+<form action="">
+    <p>FIRST NAME</p>
+    <input type="text" name="firstvalue" required >     <!--required yazarsam kesinlikle doldurmak zorunda-->
+    <p>LAST NAME</p>                                    <!-- Doldurmadigim takdirde sumbite bastigimda doldurmami söyler-->
+    <input type="text" name="lastname">
+    <p>PASSWORT</p>
+    <input type="password" name="password1"><br><br>
+
+    <input type="radio" name="food" value="pizza">PIZZA<br>
+    <input type="radio" name="food" value="salad">SALAD<br>
+    <input type="radio" name="food" value="tacos">TACOS<br><br>
+    <input type="submit" value="Submit"><br><br>
+
+    <input type="checkbox" name="skills" value="HTML"> I know HTML <br>
+    <input type="checkbox" name="skills" value="CSS"> I know CSS <br>
+    <input type="checkbox" name="skills" value="JavaScript"> I know JavaScript <br><br><br>
+
+    Quantity(Between 1 and 5) :
+     <input type="number" name="quantity" min="1" max="5"><br><br>
+
+    Birthday :
+    <input type="date" name="birthday"><br><br>
+
+    Select your favourite color : 
+    <input type="color" name="favcolor"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

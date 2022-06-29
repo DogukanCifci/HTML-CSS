@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT TESTING</title>
+    <script>
+        function doMath() 
+        {
+            var x = 10 ;
+            var y = 20 ;
+            var z = 4 ;
+            var answer = x * z / y
+            document.getElementById('result').innerHTML = 'The result is = ' + answer ; // Hier habe ich id von p geschrieben.
+        }
+    </script>
+</head>
+<body>
+    <p>JavaScript Testing</p>
+    <button onclick="doMath() ;">Click Here</button>
+    <p id="result" style="color:blue ; font-size: 20px;"></p>
+</body>
+</html>
