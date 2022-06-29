@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops in JavaScript</title>
+    <script>
+        function orderCalc() 
+        { 
+            var str = '' ;
+            var elem = document.getElementById('widgetForm').elements ;
+            for(var i = 0; i < elem.length; i++) {
+                str += "<b>Type : </b>" + elem[i].type + "&nbsp&nbsp";
+                str += "<b>Name : </b>" + elem[i].name + "&nbsp&nbsp";
+                str += "<b>Value : </b>" + elem[i].value + "&nbsp&nbsp";
+                str += "<BR>";
+            } 
+
+            document.getElementById('formElements').innerHTML = str;
+        }
+
+
+    </script>
+</head>
+<body>
+    <form action="#" id="widgetForm">
+        <div>
+            <table border="0">
+                <tr>
+                    <td>Name :</td>
+                    <td> <input type="text" name="nameInput" id="nameInputId"></td>
+                    <td><span class="nameOutput"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Phone Number : </td>
+                    <td><input type="text" name="phone" id="phoneId"></td>
+                    <td><span class="phoneNumberOutput"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Order Quantity : </td>
+                    <td><input type="number" name="order" id="orderId" min="1" max="15"></td>
+                    <td><span class="orderOutput"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Item Price : </td>
+                    <td><input type="number" name="quantity" id="priceId" value="10" readonly></td>
+                    <td>USD</td>
+                </tr>
+
+               <tr>
+                   <td> <button id="button" onclick="orderCalc() ;">Order now</button></td>
+               </tr>
+            </table>
+            <p class="allElementsOutput"></p>
+            <span class="formElements"></span>
+        </div>
+    </form>
+    
+</body>
+</html>
