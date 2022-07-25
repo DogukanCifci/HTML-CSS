@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Assignment</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        img{
+            width: 350px;
+            height: 350px;
+            margin-left: 700px;
+        }
+        h1{
+            font-size: 35px;
+            color: blue;
+        }
+        h2{
+            color: black;
+        }
+    </style>
+    <script type="text/javascript">
+       
+         function nameCheck() 
+    {
+        
+        var userName = document.getElementById('Name').value;
+        
+        if(userName == "")
+        {
+            document.getElementById("nameOutput").innerHTML = "Please write your name";
+        }
+        
+
+    }
+
+    function elementsCheck() 
+{
+    var pas1 = document.getElementById("userPasswordId1").value;
+    var pas2 = document.getElementById("userPasswordId2").value;
+
+    if(pas1==pas2)
+    {
+        alert("Passwords matched.Congrats!!!")
+       
+    }
+    
+    else{
+        alert("Passwords not matched!!!!")
+    }
+}
+    
+       
+    </script>
+</head>
+
+<body>
+    <h1>WELCOME TO THE MY ONLINE RESTAURANT</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGhANS_6edFHvf4Uf5P_zzViAhEtH4-aW65-LdSHUapg&s" alt="">
+    <h2>Please firstly fill in the form</h2>
+    City Code :   <input type="text" name="countrycode" pattern="[A-Za-z]{3}" title="Three letter country code" required><br><br>
+    <table border="0">
+        <tr>
+            <td>Your Name: </td>
+            <td><input type="text" name="Name1" id="Name" onblur="nameCheck() ; " required></td>
+            <td><span class="nameOutput"></span></td>
+        </tr>
+
+        <tr>
+            <td>Adress : </td>
+            <td><input type="text" name="adres1" id="adress"  required></td>
+            <td><span class="adressCheck"></span></td>
+        </tr>
+
+        <tr>
+            <td>Phone Number : </td>
+            <td><input type="text" name="number1" id="number" required></td>
+            <td><span class="numberCheck"></span></td>
+        </tr>
+
+        <tr>
+            <td>Password : </td>
+            <td><input type="password" name="password1" id="userPasswordId1" required></td>
+        </tr>
+
+        <tr>
+            <td>Password Again : </td>
+            <td><input type="password" name="password2" id="userPasswordId2" required></td>
+        </tr>
+    </table>
+    
+    <h2>Please choose what you want to eat</h2>
+
+    <input type="checkbox" name="food" value="pizza">PIZZA <br>Quantity :<input type="number" name="quantity" id="quantityId1" min="0" max="10"><br>
+    <input type="checkbox" name="food" value="hamburger">HAMBURGER <br>Quantity : <input type="number" name="quantity" id="quantityId1" min="0" max="10"> <br>
+    <input type="checkbox" name="food" value="Donut">DONUT <br>Quantity : <input type="number" name="quantity" id="quantityId1" min="0" max="10"> <br>
+    <input type="checkbox" name="food" value="Meat">MEAT <br>Quantity : <input type="number" name="quantity" id="quantityId1" min="0" max="10"> <br><br><br>
+
+    <button type="submit" onclick="elementsCheck();">Submit</button>
+
+
+</body>
+</html>
