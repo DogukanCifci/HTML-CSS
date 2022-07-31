@@ -1,0 +1,2 @@
+1.Bütün bilgiler hangi etiketi nasil kullanirizt bu linkte bulabilirim.
+https://getbootstrap.com/docs/5.2/components/navbar/
