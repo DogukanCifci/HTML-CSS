@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a Node</title>
+    <script type="text/javascript">
+
+        
+      
+        function addPara(){
+            var newPara = document.createElement("p") ;     //Böylece bir p Tagi olusturduk
+            var newText = document.createElement("Hello Welcome to the first trying !") ; //Bir text olusturduk
+            newPara.appendChild(newText) ;                   //Yukarda olusturdugumuz texti, olusturdugumuz p tagi icine ekledik.
+            document.span.appendChild(newPara) ;           
+        }
+
+        
+    </script>
+
+</head>
+
+<body onload="addPara()">  <!-- Yüklenirken gitmesini istedigimiz fonksiyonu cagirdik-->
+    <div id="div1">
+        <p>Hello</p>
+        <p>Hello</p>
+    </div>
+    
+</body>
+</html>
