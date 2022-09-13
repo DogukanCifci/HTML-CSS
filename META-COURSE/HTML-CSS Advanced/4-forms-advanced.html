@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <label for="booking_Date"></label>
+        <input type="date" name="booking_date" id="booking_date" />
+      </div>
+      <div>
+        <label for="booking_person">Number of People</label>
+        <input
+          type="range"
+          name="booking_person"
+          id="booking_person"
+          min="1"
+          max="10"
+          value="4"
+          oninput="this.nextElementSiblings.value =this.value"
+        />
+        <output>4</output>
+      </div>
+
+      <div>
+        <label for="booking_location">Location</label>
+        <input list="locations" name="booking_location" id="booking_location" />
+        <!-- List ' e verdigim deger datalistin id'si.-->
+        <datalist id="locations">
+          <option value="Downtown"></option>
+          <option value="Uptown"></option>
+        </datalist>
+      </div>
+    </main>
+  </body>
+</html>
